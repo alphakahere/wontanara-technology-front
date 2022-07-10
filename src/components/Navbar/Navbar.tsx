@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { BsFillPersonFill } from "react-icons/bs";
 import "./Navbar.css";
+import LogoApp from "../../assets/images/logo.png";
 
 const Navbar = () => {
 	const Links = [
@@ -26,11 +28,15 @@ const Navbar = () => {
 		},
 	];
 	return (
-		<nav className="navbar navbar-expand-lg bg-white">
+		<nav className="navbar navbar-expand-lg bg-white py-3">
 			<div className="container-fluid ">
-				<div>
+				<div className="flex-sb">
 					<NavLink className="navbar-brand" to="/">
-						Logo
+						<img
+							src={LogoApp}
+							alt="wontanara-technologie-logo"
+							height="40px"
+						/>
 					</NavLink>
 					<button
 						className="navbar-toggler"
@@ -45,7 +51,7 @@ const Navbar = () => {
 					</button>
 				</div>
 				<div className="collapse navbar-collapse" id="navbarApp">
-					<ul className="navbar-nav">
+					<ul className="navbar-nav ms-auto">
 						{Links.map((item, index) => (
 							<li className="nav-item" key={index}>
 								<NavLink
@@ -63,7 +69,13 @@ const Navbar = () => {
 						))}
 					</ul>
 					<div>
-						<Link to="/espace-etudiant">Espace Etudiant</Link>
+						<Link
+							to="/espace-etudiant"
+							className="btn-espace-etudiant ms-3 items-center"
+						>
+							<BsFillPersonFill />
+							<span>Espace Etudiant</span>
+						</Link>
 					</div>
 				</div>
 			</div>

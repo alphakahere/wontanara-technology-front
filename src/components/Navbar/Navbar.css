@@ -1,10 +1,29 @@
 .app-nav-link {
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;
 	text-transform: capitalize;
 	color: #000000;
+	opacity: 0.7;
 }
-.active-link, .app-nav-link:hover, .app-nav-link:focus {
-    color: #CC1B0B;
+.active-link,
+.app-nav-link:hover,
+.app-nav-link:focus {
+	color: #cc1b0b;
+	opacity: 1;
+}
+
+.btn-espace-etudiant {
+	background-color: #cc1b0b;
+	border: 1px solid #cc1b0b;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	padding: .7rem 1.3rem;
+	border-radius: 5px;
+}
+
+.btn-espace-etudiant:hover {
+	color: #ffffff;
 }

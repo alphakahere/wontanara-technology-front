@@ -11,7 +11,7 @@ const Header = () => {
 	};
 	return (
 		<header>
-			<div className="top-header d-flex align-items-center gap-5">
+			<div className="top-header d-sm-flex align-items-center gap-5">
 				<div className="d-flex align-items-center gap-2">
 					<FiPhoneCall style={iconStyle} />
 					<a href={`tel: ${"00221775280693"}`}>00221775280693</a>
