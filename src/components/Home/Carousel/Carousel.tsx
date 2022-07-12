@@ -1,82 +1,88 @@
 import React from "react";
+// import { Carousel } from "react-responsive-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import Carousel from "react-multi-carousel";
+// import "react-multi-carousel/lib/styles.css";
 
-function Carousel() {
+// import CarouselImage1 from "../../../assets/images/carousel1.jpg";
+// import CarouselImage2 from "../../../assets/images/carousel2.png";
+// import CarouselImage3 from "../../../assets/images/carousel3.jpg";
+// const responsive = {
+// 	superLargeDesktop: {
+// 		breakpoint: { max: 4000, min: 3000 },
+// 		items: 1,
+// 	},
+// 	desktop: {
+// 		breakpoint: { max: 3000, min: 1024 },
+// 		items: 1,
+// 		slidesToSlide: 1,
+// 	},
+// 	tablet: {
+// 		breakpoint: { max: 1024, min: 464 },
+// 		items: 1,
+// 		slidesToSlide: 1,
+// 	},
+// 	mobile: {
+// 		breakpoint: { max: 464, min: 0 },
+// 		items: 1,
+// 		slidesToSlide: 1,
+// 	},
+// };
+
+function AppCarousel() {
 	return (
-		<section className="carousel-container">
-			<div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
-				<div className="carousel-inner">
-					<div className="carousel-item active">
-						<img
-							src="https://picsum.photos/205/300"
-							className="d-block w-100"
-							alt="..."
-							height="600px"
-						/>
-						<div className="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>
-								Some representative placeholder content for the
-								first slide.
-							</p>
-						</div>
-					</div>
-					<div className="carousel-item">
-						<img
-							src="https://picsum.photos/202/300"
-							className="d-block w-100"
-							alt="..."
-							height="600px"
-							style={{ objectFit: "cover" }}
-						/>
-						<div className="carousel-caption d-none d-md-block">
-							<h5>Second slide label</h5>
-							<p>
-								Some representative placeholder content for the
-								second slide.
-							</p>
-						</div>
-					</div>
-					<div className="carousel-item">
-						<img
-							src="https://picsum.photos/200/300"
-							className="d-block w-100"
-							alt="..."
-							height="600px"
-						/>
-						<div className="carousel-caption d-none d-md-block">
-							<h5>Third slide label</h5>
-							<p>
-								Some representative placeholder content for the
-								third slide.
-							</p>
-						</div>
+		<section className="wontanara-banner d-flex align-items-center justify-content-center position-relative">
+			{/* <Carousel
+				// showArrows={true}
+				// autoPlay={true}
+				// centerMode={true}
+				// centerSlidePercentage={100}
+				// infiniteLoop={true}
+				// emulateTouch={true}
+				// interval={3000}
+				// showThumbs={false}
+				// showStatus={false}
+				// transitionTime={3000}
+				// width="100%"
+				swipeable={false}
+				draggable={true}
+				showDots={true}
+				responsive={responsive}
+				ssr={true}
+				infinite={true}
+				autoPlay={true}
+				autoPlaySpeed={3000}
+				keyBoardControl={false}
+				customTransition="transform 1000ms ease-in-out"
+				transitionDuration={3000}
+				containerClass="carousel-container"
+				// removeArrowOnDeviceType={["tablet", "mobile"]}
+				// dotListClass="custom-dot-list-style"
+				itemClass="carousel-item-padding-40-px"
+			>
+				<div className="position-relative">
+					<img src={CarouselImage1} alt="carousel" className="img-carousel" />
+					<div className="d-flex align-items-center justify-content-center bg-success position-absolute top-0">
+						<h1 className="banner-text">
+							Amicale des étudiants guinéeens de L'ISI
+						</h1>
+						<button className="btn-voir-plus">Voir Plus</button>
 					</div>
 				</div>
-				<button
-					className="carousel-control-prev"
-					type="button"
-					data-bs-target="#carouselExampleCaptions"
-					data-bs-slide="prev"
-				>
-					<span
-						className="carousel-control-prev-icon"
-						aria-hidden="true"
-					></span>
-				</button>
-				<button
-					className="carousel-control-next"
-					type="button"
-					data-bs-target="#carouselExampleCaptions"
-					data-bs-slide="next"
-				>
-					<span
-						className="carousel-control-next-icon"
-						aria-hidden="true"
-					></span>
-				</button>
+				<div>
+					<img src={CarouselImage2} alt="carousel" className="img-carousel" />
+				</div>
+				<div>
+					<img src={CarouselImage3} alt="carousel" className="img-carousel" />
+				</div>
+			</Carousel> */}
+			<div className="d-flex flex-column align-items-center gap-5 banner-text">
+				<h1 className="banner-title">Amicale des étudiants guinéeens de L'ISI</h1>
+				<button className="btn-voir-plus btn-espace-etudiant">Voir Plus</button>
 			</div>
+			<div className="banner-effect position-absolute"></div>
 		</section>
 	);
 }
 
-export default Carousel;
+export default AppCarousel;
