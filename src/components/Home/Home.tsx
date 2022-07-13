@@ -1,6 +1,9 @@
 import React from "react";
+import { FiChevronsRight } from "react-icons/fi";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from "react-router-dom";
+import "./Home.css";
 const responsive = {
 	superLargeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
@@ -23,33 +26,40 @@ const responsive = {
 	},
 };
 
+const events = [
+	{ title: "Journée Culturelle", name: "ISI 2022" },
+	{ title: "Journée Culturelle", name: "IAM 2022" },
+	{ title: "Journée Culturelle", name: "ISM 2022" },
+	{ title: "Journée d'intégration", name: "UCAD 2022" },
+];
+
 const Home = () => {
 	return (
 		<div className="home-component container mx-auto">
 			<section className="about mb-5 pt-5">
 				<h2 className="title-level-2">à propos</h2>
-				<div className="row">
+				<div className="row d-flex align-items-center">
 					<div className="col-md-6">
-						<ul>
-							<li>
+						<ul className="about-text px-0">
+							<li className="mb-3">
 								Lorem ipsum, dolor sit amet consectetur adipisicing
 								elit. Enim totam dolorum tempora, ducimus dolor
 								quam. Labore quo voluptate ullam fugiat vero
 								accusamus dolorem? Necessitatibus, aliquid
 								cupiditate asperiores reprehenderit harum velit?
 							</li>
-							<li>
+							<li className="mb-3">
 								{" "}
 								Lorem ipsum, dolor sit amet consectetur adipisicing
 								elit. Enim totam dolorum tempora, ducimus dolor
 								quam. Labore quo voluptate ullam fugiat vero
 								accusamus dolorem?
 							</li>
-							<li>
+							<li className="mb-3">
 								Necessitatibus, aliquid cupiditate asperiores
 								reprehenderit harum velit?
 							</li>
-							<li>
+							<li className="mb-3">
 								Necessitatibus, aliquid cupiditate asperiores
 								reprehenderit harum velit?
 							</li>
@@ -62,6 +72,7 @@ const Home = () => {
 							className=""
 							width="100%"
 							height="400px"
+							style={{ borderRadius: "10px" }}
 						/>
 					</div>
 				</div>
@@ -82,31 +93,25 @@ const Home = () => {
 						customTransition="transform 1000ms ease-in-out"
 						transitionDuration={3000}
 						containerClass="carousel-container"
-						arrows={false}
-						// removeArrowOnDeviceType={["tablet", "mobile"]}
-						// dotListClass="custom-dot-list-style"
+						arrows={true}
+						dotListClass="custom-dot-list-style"
 						itemClass="carousel-item-padding-40-px"
 					>
-						<div className="event-card card">
-							<h5 className="card-title">Card title</h5>
-							<h6 className="card-name">ISI 2022</h6>
-							<button>Voir plus</button>
-						</div>
-						<div className="event-card card">
-							<h5 className="card-title">Card title</h5>
-							<h6 className="card-name">ISI 2022</h6>
-							<button>Voir plus</button>
-						</div>
-						<div className="event-card card">
-							<h5 className="card-title">Card title</h5>
-							<h6 className="card-name">ISI 2022</h6>
-							<button>Voir plus</button>
-						</div>
-						<div className="event-card card">
-							<h5 className="card-title">Card title</h5>
-							<h6 className="card-name">ISI 2022</h6>
-							<button>Voir plus</button>
-						</div>
+						{events?.map((event) => (
+							<div className="event-card card">
+								<h5 className="card-title">{event?.title}</h5>
+								<h6 className="card-name">{event?.name}</h6>
+								<div className="d-flex justify-content-center">
+									<Link
+										className="btn-voir-plus btn-espace-etudiant"
+										to="/"
+									>
+										<span>Voir plus</span>
+										<FiChevronsRight />
+									</Link>
+								</div>
+							</div>
+						))}
 					</Carousel>
 				</div>
 			</section>
@@ -120,7 +125,7 @@ const Home = () => {
 						>
 							<img
 								src={`https://picsum.photos/10${_i}`}
-								className="card-img-top"
+								className="card-img-top card-shool-img"
 								alt="..."
 							/>
 							<div className="card-body">

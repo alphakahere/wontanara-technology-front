@@ -19,13 +19,13 @@
 	background-size: cover;
 	background-position: center;
 }
-.banner-effect {
+ .banner-effect {
 	/* background-color: #000000; */
 	background-color: #cc1b0b;
 	height: 100%;
 	width: 100%;
 	opacity: 0.2;
-}
+} 
 .banner-text {
 	z-index: 100;
 }
