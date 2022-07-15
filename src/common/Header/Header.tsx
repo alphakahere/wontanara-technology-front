@@ -18,7 +18,9 @@ const Header = () => {
 				</div>
 				<div className="d-flex align-items-center gap-2">
 					<FiMail style={iconStyle} />
-					<a href="mailto:alphakahere@gmail.com">contact@wontanaratech.com</a>
+					<a href="mailto:contact@wontanaratech.com">
+						contact@wontanaratech.com
+					</a>
 				</div>
 			</div>
 			<Navbar />
