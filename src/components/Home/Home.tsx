@@ -32,7 +32,33 @@ const events = [
 	{ title: "Journée Culturelle", name: "ISM 2022" },
 	{ title: "Journée d'intégration", name: "UCAD 2022" },
 ];
-
+const schools = [
+	{
+		name: "IAM",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+		pdf: "pdf",
+	},
+	{
+		name: "ISI",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+		pdf: "pdf",
+	},
+	{
+		name: "UCAD",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+		pdf: "pdf",
+	},
+	{
+		name: "ISM",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+		pdf: "pdf",
+	},
+	{
+		name: "UNIPRO",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+		pdf: "pdf",
+	},
+];
 const Home = () => {
 	return (
 		<div className="home-component container mx-auto">
@@ -97,18 +123,33 @@ const Home = () => {
 						dotListClass="custom-dot-list-style"
 						itemClass="carousel-item-padding-40-px"
 					>
-						{events?.map((event) => (
-							<div className="event-card card">
-								<h5 className="card-title">{event?.title}</h5>
-								<h6 className="card-name">{event?.name}</h6>
-								<div className="d-flex justify-content-center">
-									<Link
-										className="btn-voir-plus btn-espace-etudiant"
-										to="/"
-									>
-										<span>Voir plus</span>
-										<FiChevronsRight />
-									</Link>
+						{events?.map((event, i) => (
+							<div className="event-card card" key={i}>
+								<div className="event-img-container">
+									<img
+										src={`https://picsum.photos/10${i}`}
+										alt={event.title}
+										className="event-card-img w-100"
+									/>
+								</div>
+								<div className="p-3">
+									<div className="d-flex justify-content-between mb-3">
+										<h5 className="card-title">
+											{event?.title}
+										</h5>
+										<h6 className="card-name">
+											{event?.name}
+										</h6>
+									</div>
+									<div className="d-flex justify-content-center">
+										<Link
+											className="btn-voir-plus btn-espace-etudiant"
+											to="/"
+										>
+											<span>Details</span>
+											<FiChevronsRight />
+										</Link>
+									</div>
 								</div>
 							</div>
 						))}
@@ -118,28 +159,20 @@ const Home = () => {
 			<section className="about mb-5 pt-5">
 				<h2 className="title-level-2">Trouvez les meilleures écoles du Sénégal</h2>
 				<div className="row">
-					{[...Array(8)].map((elem, _i) => (
-						<div
-							className="card px-0 mb-3 col-sm-6 col-md-4 col-xl-4"
-							key={_i}
-						>
-							<img
-								src={`https://picsum.photos/10${_i}`}
-								className="card-img-top card-shool-img"
-								alt="..."
-							/>
-							<div className="card-body">
-								<h5 className="card-title">Card title</h5>
-								<p className="card-text">
-									Some quick example text to build on the card
-									title and make up the bulk of the card's
-									content.
-								</p>
-								<a href="/" className="btn btn-primary">
-									Go somewhere
-								</a>
+					{schools.map((item, _i) => (
+						<Link to="/" className="mb-3 col-sm-6 col-md-4" key={_i}>
+							<div className="card card-school">
+								<img
+									src={`https://picsum.photos/20${_i}`}
+									className="card-img-top card-shcool-img"
+									alt="card-img"
+								/>
+								<div className="card-body">
+									<h5 className="card-title">{item?.name}</h5>
+									<p className="card-text">{item?.except}</p>
+								</div>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 			</section>

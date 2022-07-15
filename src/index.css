@@ -8,6 +8,7 @@
 }
 a {
 	text-decoration: inherit;
+	color: inherit;
 }
 li {
 	list-style: none;
