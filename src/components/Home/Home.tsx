@@ -1,9 +1,11 @@
 import React from "react";
-import { FiChevronsRight } from "react-icons/fi";
+import { FiChevronsRight, FiDownload } from "react-icons/fi";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import "./Home.css";
+// @ts-ignore
+import pdf from "../../assets/Documents/ubuntu.pdf";
 const responsive = {
 	superLargeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
@@ -34,27 +36,32 @@ const events = [
 ];
 const schools = [
 	{
-		name: "IAM",
+		sigle: "IAM",
+		name: "Institut Africain  de Management",
 		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
 		pdf: "pdf",
 	},
 	{
-		name: "ISI",
+		sigle: "ISI",
+		name: "Institut Supérieur d'Informatique",
 		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
 		pdf: "pdf",
 	},
 	{
-		name: "UCAD",
+		sigle: "UCAD",
+		name: "Université Cheick Anta Diop",
 		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
 		pdf: "pdf",
 	},
 	{
-		name: "ISM",
+		sigle: "ISM",
+		name: "Institut Supérieur de Management",
 		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
 		pdf: "pdf",
 	},
 	{
-		name: "UNIPRO",
+		sigle: "UNIPRO",
+		name: "Univers Professionnels",
 		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
 		pdf: "pdf",
 	},
@@ -137,7 +144,7 @@ const Home = () => {
 										<h5 className="card-title">
 											{event?.title}
 										</h5>
-										<h6 className="card-name">
+										<h6 className="card-name badge text-bg-dark fs-13">
 											{event?.name}
 										</h6>
 									</div>
@@ -160,7 +167,7 @@ const Home = () => {
 				<h2 className="title-level-2">Trouvez les meilleures écoles du Sénégal</h2>
 				<div className="row">
 					{schools.map((item, _i) => (
-						<Link to="/" className="mb-3 col-sm-6 col-md-4" key={_i}>
+						<div className="mb-3 col-sm-6 col-md-4" key={_i}>
 							<div className="card card-school">
 								<img
 									src={`https://picsum.photos/20${_i}`}
@@ -168,11 +175,33 @@ const Home = () => {
 									alt="card-img"
 								/>
 								<div className="card-body">
-									<h5 className="card-title">{item?.name}</h5>
+									<h5 className="card-title text-center fw-500">
+										{item?.sigle}
+									</h5>
+									<p className="school-name card-text text-center fw-500 mb-2">
+										{item?.name}
+									</p>
 									<p className="card-text">{item?.except}</p>
+									<div className="flex-sb-ic mt-3 p-2">
+										<Link
+											to="/"
+											className="btn-voir-plus btn-espace-etudiant"
+										>
+											Continuer
+										</Link>
+										<a
+											href={pdf}
+											className="download-link"
+											target="_blank"
+											rel="noreferrer"
+										>
+											<FiDownload />
+											<span>Brochure</span>
+										</a>
+									</div>
 								</div>
 							</div>
-						</Link>
+						</div>
 					))}
 				</div>
 			</section>

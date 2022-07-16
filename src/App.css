@@ -5,4 +5,39 @@
 .flex-sb {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-sb-ic {
+    display: flex;
+    justify-content: space-between;
+}
+/***** font size utils *******/
+.fs-13 {
+    font-size: 13px;
+}
+
+/***** font weight utils *******/
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-800 {
+    font-weight: 800;
+}
+
+
+/************ end ********/
+
+.divider {
+    background-color: rgba(0, 0, 0, .5);
+    height: 1px;
+    width: 100%;
 }

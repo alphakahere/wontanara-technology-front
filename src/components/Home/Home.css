@@ -112,3 +112,15 @@
 	transform: scale(1.02);
     color: #000000;
 }
+
+.download-link {
+	display: block;
+	color: #000000;
+	display: flex;
+	align-items: center;
+	gap: 3px;
+	font-weight: 500;
+}
+.download-link:hover {
+	color: #cc1b0b;
+}
