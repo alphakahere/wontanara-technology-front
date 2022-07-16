@@ -2,7 +2,7 @@ import React from "react";
 import { schools } from "../../utils/Constant";
 import SchoolCard from "./SchoolCard";
 
-export const School = () => {
+const School = () => {
 	return (
 		<div className="school-component py-4">
 			<div className="mx-auto container">
@@ -26,7 +26,7 @@ export const School = () => {
 					</select>
 				</div>
 				<div className="row">
-					{schools?.slice(0, 6)?.map((item, _i) => (
+					{schools?.map((item, _i) => (
 						<SchoolCard item={item} key={_i} />
 					))}
 				</div>
@@ -34,3 +34,5 @@ export const School = () => {
 		</div>
 	);
 };
+
+export default School;

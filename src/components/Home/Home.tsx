@@ -1,12 +1,11 @@
 import React from "react";
-import { FiChevronsRight } from "react-icons/fi";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Link } from "react-router-dom";
 import "./Home.css";
 import AppBanner from "./HomeSection/Banner";
-import { schools } from "../../utils/Constant";
+import { events, schools } from "../../utils/Constant";
 import SchoolCard from "../School/SchoolCard";
+import EventCard from "../Events/EventCard";
 const responsive = {
 	superLargeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
@@ -28,13 +27,6 @@ const responsive = {
 		slidesToSlide: 1,
 	},
 };
-
-const events = [
-	{ title: "Journée Culturelle", name: "ISI 2022" },
-	{ title: "Journée Culturelle", name: "IAM 2022" },
-	{ title: "Journée Culturelle", name: "ISM 2022" },
-	{ title: "Journée d'intégration", name: "UCAD 2022" },
-];
 
 const Home = () => {
 	return (
@@ -106,34 +98,7 @@ const Home = () => {
 							itemClass="carousel-item-padding-40-px"
 						>
 							{events?.map((event, i) => (
-								<div className="event-card card" key={i}>
-									<div className="event-img-container">
-										<img
-											src={`https://picsum.photos/10${i}`}
-											alt={event.title}
-											className="event-card-img w-100"
-										/>
-									</div>
-									<div className="p-3">
-										<div className="d-flex justify-content-between mb-3">
-											<h5 className="card-title">
-												{event?.title}
-											</h5>
-											<h6 className="card-name badge text-bg-dark fs-13">
-												{event?.name}
-											</h6>
-										</div>
-										<div className="d-flex justify-content-center">
-											<Link
-												className="btn-voir-plus btn-espace-etudiant"
-												to="/"
-											>
-												<span>Details</span>
-												<FiChevronsRight />
-											</Link>
-										</div>
-									</div>
-								</div>
+								<EventCard key={i} event={event} />
 							))}
 						</Carousel>
 					</div>
