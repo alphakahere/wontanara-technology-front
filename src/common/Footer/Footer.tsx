@@ -7,7 +7,7 @@ const Footer = () => {
 			<div className="row footer py-3">
 				<div className="col-md-4">
 					<ul>
-						<li>Liens utiles</li>
+						<li className="list-title">Liens utiles</li>
 						<li>
 							<Link to="/">à propos</Link>
 						</li>
@@ -21,7 +21,7 @@ const Footer = () => {
 				</div>
 				<div className="col-md-4">
 					<ul>
-						<li>Nous suivre</li>
+						<li className="list-title">Nous suivre</li>
 						<li>
 							<a href="/">Facebook</a>
 						</li>
@@ -41,7 +41,7 @@ const Footer = () => {
 				</div>
 				<div className="col-md-4">
 					<ul>
-						<li>Contact</li>
+						<li className="list-title">Contacts</li>
 						<li>
 							<Link to="/">Nous contacter</Link>
 						</li>
@@ -50,12 +50,15 @@ const Footer = () => {
 								contact@wontanaratech.com
 							</a>
 						</li>
+						<li>
+							<a href={`tel: ${"00221775280693"}`}>00221775280693</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div className="wontanara-sign">
 				<p className="text-center py-3">
-					©2021 Tous droits réservés.
+					Copyright © 2022 Tous droits réservés.
 					<Link translate="no" to="/">
 						Wontanara technology
 					</Link>

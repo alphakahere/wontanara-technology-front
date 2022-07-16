@@ -1,8 +1,34 @@
 .footer {
-    background-color: #21232A;
-    color: #ffffff;
+	background-color: #21232a;
+	color: #ffffff;
 }
 .wontanara-sign {
-    background-color: #000000;
+	background-color: #000000;
+	color: #ffffff;
+}
+.footer ul li {
+	text-transform: capitalize;
+}
+.footer .list-title {
+	font-size: 17px;
+	line-height: 22px;
+	color: #ffffff;
+	font-weight: 600;
+    margin-bottom: .5rem !important;
+}
+.footer a {
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: -0.204545px;
+    font-weight: 300;
+	color: #fafafa;
+    transition: all ease 100ms;
+}
+.footer a:hover {
+    color: #ffffff;
+    font-weight: 500;
+}
+.wontanara-sign a:hover{
+    font-weight: 500;
     color: #ffffff;
 }
