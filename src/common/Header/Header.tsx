@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
-import Carousel from "../../components/Home/Carousel/Carousel";
 import "./Header.css";
 import { colors } from "../../utils/theme";
 
@@ -24,7 +23,6 @@ const Header = () => {
 				</div>
 			</div>
 			<Navbar />
-			<Carousel />
 		</header>
 	);
 };

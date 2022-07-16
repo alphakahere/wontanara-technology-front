@@ -16,7 +16,7 @@ const Navbar = () => {
 		},
 		{
 			label: "Les écoles",
-			path: "/les-ecoles",
+			path: "/nos-ecoles",
 		},
 		{
 			label: "Nos événements",
@@ -70,7 +70,7 @@ const Navbar = () => {
 					</ul>
 					<div>
 						<Link
-							to="/espace-etudiant"
+							to="/"
 							className="btn-espace-etudiant ms-lg-3 items-center justify-content-center"
 						>
 							<BsFillPersonFill />

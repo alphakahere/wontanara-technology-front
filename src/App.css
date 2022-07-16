@@ -45,6 +45,11 @@
     height: 1px;
     width: 100%;
 }
+
+.label-filter {
+    white-space: no-wrap;
+}
+
 @media (min-width: 992px) {
     .navbar-resp-width {
         width: 10% !important;

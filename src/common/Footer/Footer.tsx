@@ -57,7 +57,7 @@ const Footer = () => {
 			</div>
 			<div className="wontanara-sign">
 				<p className="text-center py-3">
-					Copyright © 2022 Tous droits réservés.
+					© 2022 Tous droits réservés.
 					<Link translate="no" to="/">
 						Wontanara technology
 					</Link>

@@ -1,4 +1,5 @@
 import Home from "../components/Home/Home";
+import { School } from "../components/School/School";
 import Layout from "../Layouts/Layout";
 
 export const AppRoutes = [
@@ -8,6 +9,10 @@ export const AppRoutes = [
 			{
 				path: "/",
 				element: <Home />,
+			},
+			{
+				path: "/nos-ecoles",
+				element: <School />,
 			},
 		],
 	},
