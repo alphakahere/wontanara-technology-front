@@ -32,6 +32,6 @@
 .banner-title {
 	color: #ffffff;
 	text-decoration: none;
-	font-size: clamp(20px, 3vw, 36px);
+	font-size: clamp(14px, 3vw, 40px);
 	font-weight: 700;
 }

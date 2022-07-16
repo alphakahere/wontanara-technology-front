@@ -1,6 +1,6 @@
 .title-level-2 {
 	font-weight: 600;
-	font-size: 32px;
+	font-size: clamp(14px, 3vw, 32px);
 	line-height: 42px;
 	color: #18191f;
 	text-transform: capitalize;
@@ -123,4 +123,7 @@
 }
 .download-link:hover {
 	color: #cc1b0b;
+}
+.school-name {
+	font-size: clamp(12px, 1vw, 14px);
 }

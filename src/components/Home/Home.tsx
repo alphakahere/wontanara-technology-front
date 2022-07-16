@@ -72,7 +72,7 @@ const Home = () => {
 			<section className="about mb-5 pt-5">
 				<h2 className="title-level-2">à propos</h2>
 				<div className="row d-flex align-items-center">
-					<div className="col-md-6">
+					<div className="col-lg-6">
 						<ul className="about-text px-0">
 							<li className="mb-3">
 								Lorem ipsum, dolor sit amet consectetur adipisicing
@@ -98,7 +98,7 @@ const Home = () => {
 							</li>
 						</ul>
 					</div>
-					<div className="col-md-6">
+					<div className="col-lg-6">
 						<img
 							src="https://picsum.photos/200"
 							alt=""
@@ -167,7 +167,7 @@ const Home = () => {
 				<h2 className="title-level-2">Trouvez les meilleures écoles du Sénégal</h2>
 				<div className="row">
 					{schools.map((item, _i) => (
-						<div className="mb-3 col-sm-6 col-md-4" key={_i}>
+						<div className="mb-4 col-sm-6 col-lg-4" key={_i}>
 							<div className="card card-school">
 								<img
 									src={`https://picsum.photos/20${_i}`}

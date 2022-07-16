@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
@@ -21,7 +20,7 @@ const Footer = () => {
 				</div>
 				<div className="col-md-4">
 					<ul>
-						<li className="list-title">Nous suivre</li>
+						<li className="list-title mt-3 mt-md-0">Nous suivre</li>
 						<li>
 							<a href="/">Facebook</a>
 						</li>
@@ -41,7 +40,7 @@ const Footer = () => {
 				</div>
 				<div className="col-md-4">
 					<ul>
-						<li className="list-title">Contacts</li>
+						<li className="list-title mt-3 mt-md-0">Contacts</li>
 						<li>
 							<Link to="/">Nous contacter</Link>
 						</li>

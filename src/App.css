@@ -5,11 +5,15 @@
 .flex-sb {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.flex-r {
+    display: flex;
+    justify-content: flex-end;
 }
 .flex-sb-ic {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 /***** font size utils *******/
 .fs-13 {
@@ -40,4 +44,20 @@
     background-color: rgba(0, 0, 0, .5);
     height: 1px;
     width: 100%;
+}
+@media (min-width: 992px) {
+    .navbar-resp-width {
+        width: 10% !important;
+    }
+}
+@media (max-width: 500px) {
+    .wontanara-banner {
+        height: 20vh !important;
+    }
+}
+
+@media (max-width: 1023px) {
+    .wontanara-banner {
+        height: 30vh !important;
+    }
 }
