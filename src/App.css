@@ -49,7 +49,22 @@
 .label-filter {
     white-space: no-wrap;
 }
-
+.detail-title {
+    font-weight: 500;
+	font-size: clamp(14px, 3vw, 36px);
+	line-height: 42px;
+	color: #18191f;
+	text-transform: capitalize;
+	font-family: "Poppins";
+}
+.detail-text p{
+    font-weight: 400;
+	font-size: clamp(14px, 3vw, 20px);
+	line-height: 32px;
+	color: #18191f;
+    font-family: "Montserrat";
+    text-align: justify;
+}
 @media (min-width: 992px) {
     .navbar-resp-width {
         width: 10% !important;

@@ -20,7 +20,10 @@ const SchoolCard = ({ item }: { item: any }) => {
 					</p>
 					<p className="card-text">{item?.except}</p>
 					<div className="flex-sb-ic mt-3 p-2">
-						<Link to="/" className="btn-voir-plus btn-espace-etudiant">
+						<Link
+							to={`/nos-ecoles/:${Math.round(Math.random() * 10)}`}
+							className="btn-voir-plus btn-espace-etudiant"
+						>
 							Continuer
 						</Link>
 						<a

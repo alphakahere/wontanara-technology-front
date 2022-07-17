@@ -18,7 +18,11 @@ const EventCard = ({ event }: { event: any }) => {
 					<h6 className="card-name badge text-bg-dark fs-13">{event?.name}</h6>
 				</div>
 				<div className="d-flex justify-content-center">
-					<Link className="btn-voir-plus btn-espace-etudiant" to="/">
+					<Link
+						className="btn-voir-plus btn-espace-etudiant"
+						to={`/nos-evenements/:${Math.round(Math.random() * 10)}`}
+						state={event}
+					>
 						<span>Details</span>
 						<FiChevronsRight />
 					</Link>

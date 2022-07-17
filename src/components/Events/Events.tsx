@@ -1,10 +1,11 @@
 import React from "react";
 import { events } from "../../utils/Constant";
 import EventCard from "./EventCard";
+import "./Event.css";
 
 const Events = () => {
 	return (
-		<div className="events-component py-4 bg-white">
+		<div className="events-component py-4">
 			<div className="mx-auto container">
 				<h2 className="title-level-2 mb-2" id="about">
 					Nos événements
@@ -14,8 +15,8 @@ const Events = () => {
 						Filtrer:
 					</label>
 					<select name="filter" id="filter-select" className="form-select w-25">
-						<option value="">A venir</option>
-						<option value="">Passé</option>
+						<option value="">Prochains</option>
+						<option value="">Passés</option>
 					</select>
 				</div>
 				<div className="row">
