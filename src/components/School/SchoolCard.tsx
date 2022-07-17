@@ -25,7 +25,7 @@ const SchoolCard = ({ item }: { item: any }) => {
 							className="btn-voir-plus btn-espace-etudiant"
 							state={item}
 						>
-							Continuer
+							Plus d'infos
 						</Link>
 						<a
 							href={pdf}

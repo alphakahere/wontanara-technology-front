@@ -1,3 +1,5 @@
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
 import EventDetail from "../components/Events/EventDetail";
 import Events from "../components/Events/Events";
 import Home from "../components/Home/Home";
@@ -14,7 +16,7 @@ export const AppRoutes = [
 				element: <Home />,
 			},
 			{
-				path: "/nos-ecoles",
+				path: "nos-ecoles",
 				element: <School />,
 			},
 			{
@@ -22,12 +24,20 @@ export const AppRoutes = [
 				element: <SchoolDetail />,
 			},
 			{
-				path: "/nos-evenements",
+				path: "nos-evenements",
 				element: <Events />,
 			},
 			{
-				path: "/nos-evenements/:slug",
+				path: "nos-evenements/:slug",
 				element: <EventDetail />,
+			},
+			{
+				path: "a-propos",
+				element: <About />,
+			},
+			{
+				path: "contact",
+				element: <Contact />,
 			},
 		],
 	},

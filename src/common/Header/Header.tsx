@@ -3,11 +3,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import { FiMail, FiPhoneCall } from "react-icons/fi";
 import "./Header.css";
 import { colors } from "../../utils/theme";
-
+export const iconStyle = {
+	color: colors.primary,
+};
 const Header = () => {
-	const iconStyle = {
-		color: colors.primary,
-	};
 	return (
 		<header>
 			<div className="top-header d-sm-flex align-items-center gap-5">
