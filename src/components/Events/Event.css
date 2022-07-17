@@ -1,5 +1,5 @@
 .events-details .gallery-container .image-gallery-slide {
-	max-height: calc(100vh - 300px);
+	/* max-height: calc(100vh - 300px); */
 }
 .events-details .gallery-container .image-gallery-right-nav:hover .image-gallery-svg,
 .events-details .gallery-container .image-gallery-right-nav:focus .image-gallery-svg,

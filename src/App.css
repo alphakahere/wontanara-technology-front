@@ -65,6 +65,9 @@
     font-family: "Montserrat";
     text-align: justify;
 }
+.object-cover {
+    object-fit: cover;
+}
 @media (min-width: 992px) {
     .navbar-resp-width {
         width: 10% !important;

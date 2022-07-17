@@ -23,6 +23,7 @@ const SchoolCard = ({ item }: { item: any }) => {
 						<Link
 							to={`/nos-ecoles/:${Math.round(Math.random() * 10)}`}
 							className="btn-voir-plus btn-espace-etudiant"
+							state={item}
 						>
 							Continuer
 						</Link>
