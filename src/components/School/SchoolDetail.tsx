@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { FiDownload } from "react-icons/fi";
 // @ts-ignore
 import pdf from "../../assets/Documents/ubuntu.pdf";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 const responsive = {
 	superLargeDesktop: {
 		// the naming can be any, depends on you.
@@ -27,22 +29,36 @@ const responsive = {
 
 const SchoolDetail = () => {
 	const item = useLocation()?.state as any;
+	const [isLoading, setIsLoading] = useState(true);
+	useEffect(() => {
+		setTimeout(() => setIsLoading(false), 3000);
+	});
 	return (
 		<div className="py-4 events-details">
 			<section className="carousel-container">
-				<Carousel responsive={responsive}>
-					{[...Array(6)].map((elem, i) => (
-						<div key={i} className="p-0 m-0">
-							<img
-								src={`https://picsum.photos/300${i}`}
-								alt=""
-								width="100%"
-								height="600px"
-								className="object-cover"
-							/>
-						</div>
-					))}
-				</Carousel>
+				{isLoading && (
+					<Skeleton
+						style={{
+							height: "500px",
+							backgroundColor: "rgb(226 232 240)",
+						}}
+					/>
+				)}
+				{!isLoading && (
+					<Carousel responsive={responsive}>
+						{[...Array(6)].map((elem, i) => (
+							<div key={i} className="p-0 m-0">
+								<img
+									src={`https://picsum.photos/300${i}`}
+									alt=""
+									width="100%"
+									height="600px"
+									className="object-cover"
+								/>
+							</div>
+						))}
+					</Carousel>
+				)}
 			</section>
 			<div className="mx-auto container">
 				<div className="row">
