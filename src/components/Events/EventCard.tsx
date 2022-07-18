@@ -19,7 +19,7 @@ const EventCard = ({ event }: { event: any }) => {
 				</div>
 				<div className="d-flex justify-content-center">
 					<Link
-						className="btn-voir-plus btn-espace-etudiant"
+						className="btn-voir-plus app-btn"
 						to={`/nos-evenements/:${Math.round(Math.random() * 10)}`}
 						state={event}
 					>

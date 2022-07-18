@@ -16,20 +16,6 @@
 	opacity: 1;
 }
 
-.btn-espace-etudiant {
-	background-color: #cc1b0b;
-	border: 1px solid #cc1b0b;
-	color: #ffffff;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 20px;
-	padding: 0.7rem 1.3rem;
-	border-radius: 5px;
-}
-
-.btn-espace-etudiant:hover {
-	color: #ffffff;
-}
 .navbar-resp-width {
 	width: 100%;
 }

@@ -71,7 +71,7 @@ const Navbar = () => {
 					<div>
 						<Link
 							to="/"
-							className="btn-espace-etudiant ms-lg-3 items-center justify-content-center"
+							className="app-btn ms-lg-3 items-center justify-content-center"
 						>
 							<BsFillPersonFill />
 							<span>Espace Etudiant</span>

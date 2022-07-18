@@ -45,6 +45,7 @@
 	border-radius: 5.32308px;
 	border: none;
 	margin: 3%;
+	transition: all ease-out 300ms;
 }
 
 .event-card:hover {

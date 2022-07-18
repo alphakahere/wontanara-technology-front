@@ -6,6 +6,9 @@
 	font-family: "Montserrat", sans-serif;
 	margin: 0 !important;
 }
+.wontanara-app {
+	background-color: rgb(248 250 252);
+}
 a {
 	text-decoration: inherit;
 	color: inherit;

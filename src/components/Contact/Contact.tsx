@@ -119,10 +119,7 @@ const Contact = () => {
 								/>
 							</div>
 							<div className="flex-r">
-								<button
-									className="btn-espace-etudiant"
-									type="submit"
-								>
+								<button className="app-btn" type="submit">
 									Envoyer
 								</button>
 							</div>

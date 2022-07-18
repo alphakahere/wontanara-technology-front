@@ -22,7 +22,7 @@ const SchoolCard = ({ item }: { item: any }) => {
 					<div className="flex-sb-ic mt-3 p-2">
 						<Link
 							to={`/nos-ecoles/:${Math.round(Math.random() * 10)}`}
-							className="btn-voir-plus btn-espace-etudiant"
+							className="btn-voir-plus app-btn"
 							state={item}
 						>
 							Plus d'infos

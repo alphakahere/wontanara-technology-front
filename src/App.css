@@ -1,86 +1,102 @@
 .items-center {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 .flex-sb {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .flex-r {
-    display: flex;
-    justify-content: flex-end;
+	display: flex;
+	justify-content: flex-end;
 }
 .flex-sb-ic {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 /***** font size utils *******/
 .fs-13 {
-    font-size: 13px;
+	font-size: 13px;
 }
 
 /***** font weight utils *******/
 .fw-400 {
-    font-weight: 400;
+	font-weight: 400;
 }
 .fw-500 {
-    font-weight: 500;
+	font-weight: 500;
 }
 .fw-600 {
-    font-weight: 600;
+	font-weight: 600;
 }
 .fw-700 {
-    font-weight: 700;
+	font-weight: 700;
 }
 .fw-800 {
-    font-weight: 800;
+	font-weight: 800;
 }
-
 
 /************ end ********/
 
 .divider {
-    background-color: rgba(0, 0, 0, .5);
-    height: 1px;
-    width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 1px;
+	width: 100%;
 }
 
 .label-filter {
-    white-space: no-wrap;
+	white-space: no-wrap;
 }
 .detail-title {
-    font-weight: 500;
+	font-weight: 500;
 	font-size: clamp(14px, 3vw, 36px);
 	line-height: 42px;
 	color: #18191f;
 	text-transform: capitalize;
 	font-family: "Poppins";
 }
-.detail-text p{
-    font-weight: 400;
-	font-size: clamp(14px, 3vw, 20px);
-	line-height: 32px;
-	color: #18191f;
-    font-family: "Montserrat";
-    text-align: justify;
+.detail-text p {
+	font-weight: 400;
+	font-size: clamp(14px, 1vw, 20px);
+	line-height: 24px;
+	color: #000;
+	font-family: "Montserrat";
+	text-align: justify;
 }
 .object-cover {
-    object-fit: cover;
+	object-fit: cover;
+}
+.app-btn, .banner-btn {
+	background-color: #cc1b0b;
+	border: 1px solid #cc1b0b;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0.7rem 1.3rem;
+	border-radius: 5px;
+}
+.banner-btn:hover {
+	background-color: rgba(204, 27, 11, 0.5);
+}
+.app-btn:hover {
+	background-color: rgba(204, 27, 11, 0.1);
+	color: #cc1b0b;
 }
 @media (min-width: 992px) {
-    .navbar-resp-width {
-        width: 10% !important;
-    }
+	.navbar-resp-width {
+		width: 10% !important;
+	}
 }
 @media (max-width: 500px) {
-    .wontanara-banner {
-        height: 20vh !important;
-    }
+	.wontanara-banner {
+		height: 20vh !important;
+	}
 }
 
 @media (max-width: 1023px) {
-    .wontanara-banner {
-        height: 30vh !important;
-    }
+	.wontanara-banner {
+		height: 30vh !important;
+	}
 }
