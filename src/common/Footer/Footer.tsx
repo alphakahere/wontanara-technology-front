@@ -8,13 +8,13 @@ const Footer = () => {
 					<ul>
 						<li className="list-title">Liens utiles</li>
 						<li>
-							<Link to="/">à propos</Link>
+							<Link to="/a-propos">à propos</Link>
 						</li>
 						<li>
-							<Link to="/">Nos écoles</Link>
+							<Link to="/nos-ecoles">Nos écoles</Link>
 						</li>
 						<li>
-							<Link to="/">Nos événements</Link>
+							<Link to="/nos-evenements">Nos événements</Link>
 						</li>
 					</ul>
 				</div>
@@ -42,7 +42,7 @@ const Footer = () => {
 					<ul>
 						<li className="list-title mt-3 mt-md-0">Contacts</li>
 						<li>
-							<Link to="/">Nous contacter</Link>
+							<Link to="/contact">Nous contacter</Link>
 						</li>
 						<li>
 							<a href="mailto:contact@wontanaratech.com">

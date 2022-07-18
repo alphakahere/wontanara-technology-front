@@ -2,7 +2,6 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram, AiFillYoutube, AiOutlineTwitter } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
-import { GoogleApiWrapper } from "google-maps-react";
 import { iconStyle } from "../../common/Header/Header";
 import "./Contact.css";
 
@@ -131,6 +130,4 @@ const Contact = () => {
 	);
 };
 
-export default GoogleApiWrapper({
-	apiKey: "AIzaSyD0klc1PQS8QK--Be3rF3i8kW_idy04AVQ",
-})(Contact);
+export default Contact;
