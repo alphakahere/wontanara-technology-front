@@ -34,7 +34,12 @@ const Home = () => {
 		<div className="home-component ">
 			<AppBanner />
 			<div className="mx-auto container">
-				<AboutSection />
+				<section className="about mb-5 pt-5">
+					<h2 className="title-level-2" id="about">
+						à propos
+					</h2>
+					<AboutSection />
+				</section>
 				<section className="events-section mb-5">
 					<h2 className="title-level-2">Nos évènements</h2>
 					<div className="events">
