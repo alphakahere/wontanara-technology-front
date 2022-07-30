@@ -1,10 +1,11 @@
+import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
 	return (
-		<footer>
-			<div className="row footer py-3">
-				<div className="col-md-4">
+		<footer className="footer">
+			<div className="row pt-4 footer-links-container mx-auto container">
+				<div className="col-md-4 ps-0">
 					<ul>
 						<li className="list-title">Liens utiles</li>
 						<li>
@@ -18,7 +19,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-4 ps-0">
 					<ul>
 						<li className="list-title mt-3 mt-md-0">Nous suivre</li>
 						<li>
@@ -38,18 +39,20 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="col-md-4">
+				<div className="col-md-4 ps-0">
 					<ul>
 						<li className="list-title mt-3 mt-md-0">Contacts</li>
 						<li>
 							<Link to="/contact">Nous contacter</Link>
 						</li>
-						<li>
+						<li className="d-flex align-items-center gap-2">
+							<FiPhoneCall />
 							<a href="mailto:contact@wontanaratech.com">
 								contact@wontanaratech.com
 							</a>
 						</li>
-						<li>
+						<li className="d-flex align-items-center gap-2">
+							<FiMail />
 							<a href={`tel: ${"00221775280693"}`}>00221775280693</a>
 						</li>
 					</ul>

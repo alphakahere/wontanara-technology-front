@@ -1,6 +1,9 @@
-.footer {
+footer.footer {
 	background-color: #21232a;
 	color: #ffffff;
+}
+.footer-links-container {
+	padding-bottom: 5rem;
 }
 .wontanara-sign {
 	background-color: #000000;
@@ -8,6 +11,7 @@
 }
 .footer ul li {
 	text-transform: capitalize;
+	margin-bottom: 4px !important;
 }
 .footer .list-title {
 	font-size: 17px;
