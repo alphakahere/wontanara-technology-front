@@ -85,6 +85,10 @@
 	background-color: rgba(204, 27, 11, 0.1);
 	color: #cc1b0b;
 }
+.no-style-btn {
+	background-color: transparent;
+	border: none;
+}
 @media (min-width: 992px) {
 	.navbar-resp-width {
 		width: 10% !important;

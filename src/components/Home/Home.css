@@ -54,7 +54,7 @@
 }
 
 .event-card-img {
-	height: 14vh;
+	height: 18vh;
 	border-radius: 10px 10px 0 0;
 	object-fit: fill;
 	object-position: center;
@@ -128,4 +128,8 @@
 }
 .school-name {
 	font-size: clamp(12px, 1vw, 14px);
+}
+.card-custom-title {
+	white-space: nowrap;
+	font-size: clamp(14px, 2vw, 20px);
 }

@@ -14,7 +14,7 @@ const EventCard = ({ event }: { event: any }) => {
 			</div>
 			<div className="p-3">
 				<div className="d-flex justify-content-between mb-3">
-					<h5 className="card-title">{event?.title}</h5>
+					<h5 className="card-title card-custom-title">{event?.title}</h5>
 					<h6 className="card-name badge text-bg-dark fs-13">{event?.name}</h6>
 				</div>
 				<div className="d-flex justify-content-center">

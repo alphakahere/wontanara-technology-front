@@ -15,7 +15,7 @@ const Navbar = () => {
 			path: "/a-propos",
 		},
 		{
-			label: "Les écoles",
+			label: "Nos écoles",
 			path: "/nos-ecoles",
 		},
 		{
@@ -23,9 +23,13 @@ const Navbar = () => {
 			path: "/nos-evenements",
 		},
 		{
-			label: "Contact",
+			label: "Nos formations",
 			path: "/contact",
 		},
+		// {
+		// 	label: "Contact",
+		// 	path: "/contact",
+		// },
 	];
 	return (
 		<nav className="navbar navbar-expand-lg bg-white py-3">
@@ -67,6 +71,28 @@ const Navbar = () => {
 								</NavLink>
 							</li>
 						))}
+						<div className="dropdown">
+							<button
+								className="nav-link app-nav-link no-style-btn dropdown-toggle"
+								type="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Oppurtinités
+							</button>
+							<ul className="dropdown-menu">
+								<li>
+									<NavLink className="dropdown-item" to="/">
+										Bourse d'études
+									</NavLink>
+								</li>
+								<li>
+									<NavLink className="dropdown-item" to="/">
+										Orientation
+									</NavLink>
+								</li>
+							</ul>
+						</div>
 					</ul>
 					<div>
 						<Link

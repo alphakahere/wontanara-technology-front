@@ -1,6 +1,7 @@
 footer.footer {
 	background-color: #21232a;
 	color: #ffffff;
+	margin-top: 3rem !important;
 }
 .footer-links-container {
 	padding-bottom: 5rem;
