@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { events } from "../../utils/Constant";
-import EventCard from "./EventCard";
-import "./Event.css";
+import { formations } from "../../utils/Constant";
+import FormationCard from "./FormationCard";
+import "./Formations.css";
 
 const filters = [
 	{
@@ -18,12 +18,12 @@ const filters = [
 	},
 ];
 
-const Events = () => {
+const Formations = () => {
 	const [active, setActive] = useState(0);
 	return (
-		<div className="events-component py-4">
+		<div className="formations-component py-4">
 			<div className="mx-auto container">
-				<h2 className="title-level-2 mb-2">Nos événements</h2>
+				<h2 className="title-level-2 mb-2">Nos formations</h2>
 				<div className="filter-container items-center  gap-2">
 					{filters?.map((item, index) => (
 						<button
@@ -38,9 +38,9 @@ const Events = () => {
 					))}
 				</div>
 				<div className="row">
-					{events.map((item, _i) => (
+					{formations.map((item, _i) => (
 						<div key={_i} className="col-sm-6 col-lg-4 mb-4">
-							<EventCard event={item} />
+							<FormationCard formation={item} />
 						</div>
 					))}
 				</div>
@@ -49,4 +49,4 @@ const Events = () => {
 	);
 };
 
-export default Events;
+export default Formations;

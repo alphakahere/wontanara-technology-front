@@ -2,6 +2,7 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import EventDetail from "../components/Events/EventDetail";
 import Events from "../components/Events/Events";
+import Formations from "../components/Formations/Formations";
 import Home from "../components/Home/Home";
 import School from "../components/School/School";
 import SchoolDetail from "../components/School/SchoolDetail";
@@ -38,6 +39,10 @@ export const AppRoutes = [
 			{
 				path: "contact",
 				element: <Contact />,
+			},
+			{
+				path: "formations",
+				element: <Formations />,
 			},
 		],
 	},

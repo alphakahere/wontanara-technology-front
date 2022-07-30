@@ -4,15 +4,11 @@ const About = () => {
 	return (
 		<div className="container mx-auto py-4">
 			<section className="about mb-5 pt-5">
-				<h2 className="title-level-2" id="about">
-					Qui sommes-nous
-				</h2>
+				<h2 className="title-level-2">Qui sommes-nous</h2>
 				<AboutSection />
 			</section>
 			<section className="how-it-work mb-5 pt-5">
-				<h2 className="title-level-2" id="about">
-					Comment ça marche
-				</h2>
+				<h2 className="title-level-2">Comment ça marche</h2>
 				<div className="row">
 					<div className="col-lg-6">
 						<ul className="about-text px-0">

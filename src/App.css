@@ -67,7 +67,8 @@
 .object-cover {
 	object-fit: cover;
 }
-.app-btn, .banner-btn {
+.app-btn,
+.banner-btn {
 	background-color: #cc1b0b;
 	border: 1px solid #cc1b0b;
 	color: #ffffff;
@@ -88,6 +89,17 @@
 .no-style-btn {
 	background-color: transparent;
 	border: none;
+}
+.filter-btn {
+	border-radius: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	border: 1px solid #cc1b0b;
+}
+.filter-btn.active {
+	background-color: #cc1b0b !important;
+	color: #ffffff;
 }
 @media (min-width: 992px) {
 	.navbar-resp-width {

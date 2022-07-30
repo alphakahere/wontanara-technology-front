@@ -24,7 +24,7 @@ const Navbar = () => {
 		},
 		{
 			label: "Nos formations",
-			path: "/contact",
+			path: "/formations",
 		},
 		// {
 		// 	label: "Contact",

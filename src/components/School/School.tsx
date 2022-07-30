@@ -6,9 +6,7 @@ const School = () => {
 	return (
 		<div className="school-component py-4">
 			<div className="mx-auto container">
-				<h2 className="title-level-2 mb-2" id="about">
-					Nos écoles partenaires
-				</h2>
+				<h2 className="title-level-2 mb-2">Nos écoles partenaires</h2>
 				<p className="">
 					Choisissez votre programme et votre école parmi notre catalogue de 5
 					écoles qui offrent 50 programmes dans les domaines de l'Informatique,

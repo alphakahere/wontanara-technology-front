@@ -37,3 +37,39 @@ export const events = [
 	{ title: "Journée Culturelle", name: "ISM 2022" },
 	{ title: "Journée d'intégration", name: "UCAD 2022" },
 ];
+
+export const formations = [
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+	{
+		name: "Formation en informatique",
+		except: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim totam dolorum tempora, ducimus dolor quam.",
+	},
+];
+
