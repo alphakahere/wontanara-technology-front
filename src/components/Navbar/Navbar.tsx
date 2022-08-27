@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { BsFillPersonFill } from "react-icons/bs";
 import "./Navbar.css";
 import LogoApp from "../../assets/images/logo.png";
+import { FiLogIn } from "react-icons/fi";
 
 const Navbar = () => {
 	const Links = [
@@ -15,7 +15,7 @@ const Navbar = () => {
 			path: "/a-propos",
 		},
 		{
-			label: "Nos écoles",
+			label: "écoles",
 			path: "/nos-ecoles",
 		},
 		{
@@ -23,13 +23,13 @@ const Navbar = () => {
 			path: "/nos-evenements",
 		},
 		{
-			label: "Nos formations",
+			label: "Formations",
 			path: "/formations",
 		},
-		// {
-		// 	label: "Contact",
-		// 	path: "/contact",
-		// },
+		{
+			label: "Contact",
+			path: "/contact",
+		},
 	];
 	return (
 		<nav className="navbar navbar-expand-lg bg-white py-3">
@@ -96,11 +96,10 @@ const Navbar = () => {
 					</ul>
 					<div>
 						<Link
-							to="/"
-							className="app-btn ms-lg-3 items-center justify-content-center"
+							to="/se-connecter"
+							className="app-btn ms-lg-3 items-center justify-content-center px-3 py-2"
 						>
-							<BsFillPersonFill />
-							<span>Espace Etudiant</span>
+							<FiLogIn style={{ fontSize: 18 }} />
 						</Link>
 					</div>
 				</div>

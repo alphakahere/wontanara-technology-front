@@ -1,4 +1,5 @@
 import About from "../components/About/About";
+import Login from "../components/auth/Login";
 import Contact from "../components/Contact/Contact";
 import EventDetail from "../components/Events/EventDetail";
 import Events from "../components/Events/Events";
@@ -9,6 +10,10 @@ import SchoolDetail from "../components/School/SchoolDetail";
 import Layout from "../Layouts/Layout";
 
 export const AppRoutes = [
+	{
+		path: "se-connecter",
+		element: <Login />,
+	},
 	{
 		element: <Layout />,
 		children: [

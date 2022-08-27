@@ -23,6 +23,7 @@ header {
 	height: 600px;
 	background-size: cover;
 	background-position: center;
+	z-index: 10;
 }
  .banner-effect {
 	background-color: #cc1b0b;
