@@ -2,6 +2,7 @@ import { FiMail, FiPhoneCall } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 const Footer = () => {
+	const year = new Date().getFullYear();
 	return (
 		<footer className="footer">
 			<div className="row pt-4 footer-links-container mx-auto container">
@@ -60,7 +61,7 @@ const Footer = () => {
 			</div>
 			<div className="wontanara-sign">
 				<p className="text-center py-3">
-					© 2022 Tous droits réservés.
+					© {year} Tous droits réservés.
 					<Link translate="no" to="/">
 						Wontanara technology
 					</Link>

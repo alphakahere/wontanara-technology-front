@@ -19,7 +19,7 @@ const Navbar = () => {
 			path: "/nos-ecoles",
 		},
 		{
-			label: "Nos événements",
+			label: "événements",
 			path: "/nos-evenements",
 		},
 		{
