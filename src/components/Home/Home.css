@@ -21,6 +21,7 @@
 	line-height: 28px;
 	letter-spacing: 1px;
 	color: #000000;
+	text-align: justify;
 }
 
 .about-text li::before {
