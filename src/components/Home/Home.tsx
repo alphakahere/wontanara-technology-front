@@ -76,6 +76,18 @@ const Home = () => {
 						))}
 					</div>
 				</section>
+				<section className="about mb-5 pt-5">
+					<h2 className="title-level-2">Equipes</h2>
+					<div className="row py-5">En cours d'integration...</div>
+				</section>
+				<section className="about mb-5 pt-5">
+					<h2 className="title-level-2">Contact</h2>
+					<div className="row py-5">En cours d'integration...</div>
+				</section>
+				<section className="about mb-5 pt-5">
+					<h2 className="title-level-2">Partenaires</h2>
+					<div className="row py-5">En cours d'integration...</div>
+				</section>
 			</div>
 		</div>
 	);
