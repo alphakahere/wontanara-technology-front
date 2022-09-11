@@ -5,27 +5,27 @@ function AppBanner() {
 	return (
 		<section className="wontanara-banner d-flex align-items-center justify-content-center position-relative">
 			<div className="d-flex flex-column align-items-center gap-5 banner-text">
-				<h1 className="banner-title">
-					<span
+				<div className="banner-title d-flex flex-column  flex-md-row gap-2">
+					<h4
 						className="px-2 py-1"
 						style={{ borderRadius: "10px", backgroundColor: "red" }}
 					>
 						Amicale des Elèves,
-					</span>{" "}
-					<span
+					</h4>{" "}
+					<h4
 						style={{ backgroundColor: "#ffc107", borderRadius: "10px" }}
 						className="px-2 py-1"
 					>
 						{" "}
 						Etudiants et Stagiaires
-					</span>{" "}
-					<span
+					</h4>{" "}
+					<h4
 						style={{ backgroundColor: "#28a745", borderRadius: "10px" }}
 						className="px-2 py-1"
 					>
 						Guinéens au Sénégal
-					</span>
-				</h1>
+					</h4>
+				</div>
 				<button className="banner-btn shadow-lg" onClick={onScroll}>
 					Voir Plus
 				</button>

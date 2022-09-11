@@ -134,3 +134,18 @@
 	white-space: nowrap;
 	font-size: clamp(14px, 2vw, 20px);
 }
+.member-card-name {
+	font-family: "Poppins";
+	font-size: 16px;
+	line-height: 18px;
+}
+.member-function {
+	font-size: 12px;
+	color: #cc1b0b;
+	font-style: italic !important;
+}
+.banner-title  h4{
+	font-family: "Poppins";
+	font-size: clamp(16px, 2.7vw, 30px);
+	white-space: nowrap;
+}

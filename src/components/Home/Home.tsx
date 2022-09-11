@@ -7,6 +7,8 @@ import { events, schools } from "../../utils/Constant";
 import SchoolCard from "../School/SchoolCard";
 import EventCard from "../Events/EventCard";
 import { AboutSection } from "../About/About";
+import Teams from "./HomeSection/Teams";
+import Partenaires from "./HomeSection/Partenaires";
 const responsive = {
 	superLargeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
@@ -78,11 +80,11 @@ const Home = () => {
 				</section>
 				<section className="about mb-5 pt-5">
 					<h2 className="title-level-2">Equipe</h2>
-					<div className="row py-5">En cours d'integration...</div>
+					<Teams />
 				</section>
 				<section className="about mb-5 pt-5">
 					<h2 className="title-level-2">Partenaires</h2>
-					<div className="row py-5">En cours d'integration...</div>
+					<Partenaires />
 				</section>
 				<section className="about mb-5 pt-5">
 					<h2 className="title-level-2">Contact</h2>
@@ -92,5 +94,6 @@ const Home = () => {
 		</div>
 	);
 };
+
 
 export default Home;

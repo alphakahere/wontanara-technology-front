@@ -10,9 +10,18 @@
 	display: flex;
 	justify-content: flex-end;
 }
+.flex-c {
+	display: flex;
+	justify-content: center;
+}
 .flex-sb-ic {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+.flex-mc {
+	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 /***** font size utils *******/
