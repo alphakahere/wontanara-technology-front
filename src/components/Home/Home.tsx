@@ -9,6 +9,7 @@ import EventCard from "../Events/EventCard";
 import { AboutSection } from "../About/About";
 import Teams from "./HomeSection/Teams";
 import Partenaires from "./HomeSection/Partenaires";
+import { ContactComponent } from "../Contact/Contact";
 const responsive = {
 	superLargeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
@@ -88,12 +89,12 @@ const Home = () => {
 				</section>
 				<section className="about mb-5 pt-5">
 					<h2 className="title-level-2">Contact</h2>
-					<div className="row py-5">En cours d'integration...</div>
+
+					<ContactComponent />
 				</section>
 			</div>
 		</div>
 	);
 };
-
 
 export default Home;

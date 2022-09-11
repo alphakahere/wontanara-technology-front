@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
-import LogoApp from "../../assets/images/logo.png";
+import LogoApp from "../../assets/images/logo.jpeg";
 import { FiLogIn } from "react-icons/fi";
 
 const Navbar = () => {
@@ -39,7 +39,8 @@ const Navbar = () => {
 						<img
 							src={LogoApp}
 							alt="wontanara-technologie-logo"
-							height="40px"
+							width="100%"
+							height="50px"
 						/>
 					</NavLink>
 					<button

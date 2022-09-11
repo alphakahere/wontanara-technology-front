@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PresiAvatar from "../../../assets/images/teams/presi.jpeg";
 
 const Teams = () => {
 	return (
@@ -33,7 +34,11 @@ const Teams = () => {
 			</div>
 			<div className="teams-card-container col-lg-6">
 				<div className="row">
-					<MemberCard name="Fatoumata Binta Diallo" poste="Présidente" />
+					<MemberCard
+						name="Fatoumata Binta Diallo"
+						poste="Présidente"
+						avatar={PresiAvatar}
+					/>
 					<MemberCard name="Souleymane Diallo" poste="Sécrétaire géneral" />
 					<MemberCard name="Koto Bhoye" poste="Tous" />
 
@@ -47,9 +52,10 @@ const Teams = () => {
 interface Member {
 	name: string;
 	poste: string;
+	avatar?: string;
 	style?: React.CSSProperties;
 }
-const MemberCard: React.FC<Member> = ({ name, poste, style }) => {
+const MemberCard: React.FC<Member> = ({ name, poste, avatar, style }) => {
 	return (
 		<div className="mb-4 col-md-6" style={style}>
 			<div
@@ -58,12 +64,21 @@ const MemberCard: React.FC<Member> = ({ name, poste, style }) => {
 			>
 				<div className="member-img-container flex-c">
 					<img
-						src={`https://i.pravatar.cc/20${Math.round(
-							Math.random() * 10
-						)}`}
+						src={
+							avatar
+								? avatar
+								: `https://i.pravatar.cc/20${Math.round(
+										Math.random() * 10
+								  )}}`
+						}
 						className="card-img-top card-member-img"
 						alt="memer-img"
-						style={{ width: "150px", height: "150px", borderRadius: "50%" }}
+						style={{
+							width: "150px",
+							height: "150px",
+							borderRadius: "50%",
+							// objectFit: "cover",
+						}}
 					/>
 				</div>
 				<div className="card-body mt-3">
