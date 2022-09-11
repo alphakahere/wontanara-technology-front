@@ -1,5 +1,7 @@
 import React from "react";
-// import about from "../../assets/videos/about.mp4";
+
+import aboutVideo from "../../assets/videos/about.mp4";
+
 const About = () => {
 	return (
 		<div className="container mx-auto py-4">
@@ -113,13 +115,22 @@ export function AboutSection() {
 				</div>
 			</div>
 			<div className="col-lg-6 ps-4">
-				<img
+				{/* <img
 					src="https://picsum.photos/200"
 					alt=""
 					className=""
 					width="100%"
 					height="500px"
 					style={{ borderRadius: "10px" }}
+				/> */}
+				<iframe
+					id="AEESGS"
+					title="AEESGS"
+					width="100%"
+					height="500px"
+					src={aboutVideo}
+					loading="lazy"
+					allow="autoplay; encrypted-media"
 				/>
 			</div>
 		</div>
