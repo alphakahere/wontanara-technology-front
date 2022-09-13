@@ -59,10 +59,9 @@ interface Member {
 	name: string;
 	poste: string;
 	avatar?: string;
-	style?: React.CSSProperties;
 	id?: number;
 }
-const MemberCard: React.FC<Member> = ({ name, poste, avatar, style, id }) => {
+const MemberCard: React.FC<Member> = ({ name, poste, avatar, id }) => {
 	return (
 		<div
 			className={`card-member-${id} mb-4 mb-sm-0 shadow bg-white card-member  py-4 px-2 flex-mc`}

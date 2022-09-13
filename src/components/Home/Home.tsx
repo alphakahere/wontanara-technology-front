@@ -89,6 +89,10 @@ const Home = () => {
 				</section>
 				<section className="about mb-5 pt-5">
 					<h2 className="title-level-2">Contact</h2>
+					<small className="contact-small-text text-center d-block mb-4">
+						Avez-vous une question ou une rémarque, écrivez nous juste un
+						message!
+					</small>
 
 					<ContactComponent />
 				</section>

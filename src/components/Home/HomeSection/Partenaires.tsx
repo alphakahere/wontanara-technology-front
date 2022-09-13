@@ -3,42 +3,35 @@ import Supdeco from "../../../assets/images/supdeco.jpg";
 import ABS from "../../../assets/images/ABS.png";
 import CEFAS from "../../../assets/images/cefas.jpg";
 
-const PartnerCard = {
+const PartnerCardStyle = {
 	borderRadius: "5px",
-	minHeight: "300px",
+	minHeight: "250px",
 } as React.CSSProperties;
 
 const Partenaires = () => {
 	return (
 		<div className="row">
-			<div className="col-md-4 mb-3">
-				<div
-					className="partner-card shadow py-4 flex-mc bg-white"
-					style={PartnerCard}
-				>
-					<div className="logo-container">
-						<img src={Supdeco} alt="supdeco" style={{ width: "200px" }} />
-					</div>
-				</div>
-			</div>
-			<div className="col-md-4  mb-3">
-				<div
-					className="partner-card shadow py-4 flex-mc bg-white"
-					style={PartnerCard}
-				>
-					<div className="logo-container">
-						<img src={ABS} alt="ABS" style={{ width: "200px" }} />
-					</div>
-				</div>
-			</div>
-			<div className="col-md-4">
-				<div
-					className="partner-card shadow py-4 flex-mc bg-white"
-					style={PartnerCard}
-				>
-					<div className="logo-container">
-						<img src={CEFAS} alt="CEFAS" style={{ width: "200px" }} />
-					</div>
+			<PartenerCard logo={Supdeco} title="supdeco" />
+			<PartenerCard logo={ABS} title="ABS" />
+			<PartenerCard logo={CEFAS} title="supdeco" />
+		</div>
+	);
+};
+
+interface Partner {
+	logo: string;
+	title: string;
+}
+
+const PartenerCard: React.FC<Partner> = ({ logo, title }) => {
+	return (
+		<div className="col-md-4">
+			<div
+				className="partner-card shadow py-4 flex-mc bg-white"
+				style={PartnerCardStyle}
+			>
+				<div className="logo-container">
+					<img src={logo} alt={title} style={{ width: "200px" }} />
 				</div>
 			</div>
 		</div>
