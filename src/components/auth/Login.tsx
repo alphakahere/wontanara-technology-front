@@ -5,11 +5,11 @@ import { Input } from "../../common/Input";
 
 const Login = () => {
 	return (
-		<div className="auth-page">
-			<div className="row">
-				<div className="col-lg-6 col-xl-5 pt-5 px-5">
+		<div className="auth-page" style={{ minHeight: "100vh" }}>
+			<div className="row flex-mc" style={{ paddingTop: "8rem" }}>
+				<div className="col-lg-6  offset-lg-3 shadow rounded py-5 px-5 bg-white">
 					<h1>Connexion</h1>
-					<form action="">
+					<form action="" className="row mt-3">
 						<div className="col-12 mb-3">
 							<Input label="Email" type="email" id="email" />
 						</div>
@@ -36,7 +36,6 @@ const Login = () => {
 						</div>
 					</form>
 				</div>
-				<div className="col-lg-6 col-xl-7"></div>
 			</div>
 		</div>
 	);

@@ -79,6 +79,10 @@ const About = () => {
 					</div>
 				</div>
 			</section>
+			<section className="about mb-5 pt-5">
+				<h2 className="title-level-2">Equipe</h2>
+				En Attente del'organnigramme....
+			</section>
 		</div>
 	);
 };
