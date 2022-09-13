@@ -1,6 +1,6 @@
 import React from "react";
 import Supdeco from "../../../assets/images/supdeco.jpg";
-import ABS from "../../../assets/images/ABS.jpeg";
+import ABS from "../../../assets/images/ABS.png";
 import CEFAS from "../../../assets/images/cefas.jpg";
 
 const PartnerCard = {

@@ -1,0 +1,33 @@
+.teams-card-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(18, 20px);
+	gap: 1.5rem;
+}
+
+.card-member-1, .card-member-3 {
+	grid-column-start: 1;
+	grid-column-end: 1;
+}
+
+.card-member-2,.card-member-4  {
+	grid-column-start: 2;
+	grid-column-end: 2;
+}
+.card-member-1 {
+	grid-row-start: 2;
+	grid-row-end: 10;
+}
+.card-member-2 {
+	grid-row-start: 1;
+	grid-row-end: 9;
+}
+
+.card-member-3 {
+	grid-row-start: 10;
+	grid-row-end: 18;
+}
+.card-member-4 {
+	grid-row-start: 9;
+	grid-row-end: 17;
+}
