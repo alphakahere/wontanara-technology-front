@@ -1,6 +1,6 @@
 header {
 	position: sticky;
-	top: 0;	
+	top: 0;
 	z-index: 100;
 }
 .top-header {
@@ -25,18 +25,21 @@ header {
 	background-position: center;
 	z-index: 10;
 }
- .banner-effect {
-	background-color: #cc1b0b;
+.banner-effect {
+	background-color: #020024;
 	height: 100%;
 	width: 100%;
-	opacity: 0.2;
-} 
+	opacity: 0.4;
+	/* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(33,35,42,1) 55%, rgba(2,0,36,1) 100%); */
+}
 .banner-text {
 	z-index: 100;
 }
-.banner-title {
+.banner-title h4{
+	font-family:"Poppins";
 	color: #000;
 	text-decoration: none;
 	font-size: clamp(14px, 3vw, 30px);
 	font-weight: 700;
 }
+

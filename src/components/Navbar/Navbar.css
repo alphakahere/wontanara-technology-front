@@ -1,7 +1,7 @@
 .navbar {
 	box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 43px;
 }
-.app-nav-link {
+.app-nav-link, .app-nav-dropdown-btn {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 20px;
@@ -17,6 +17,17 @@
 	opacity: 1;
 }
 
+.app-nav-dropdown-btn:focus {
+color: #000000 !important;
+}
+
 .navbar-resp-width {
 	width: 100%;
+}
+.navbar .dropdown-item.active {
+	background-color: transparent !important;
+	color: #000000 !important;
+}
+.navbar .dropdown-item:hover {
+	color: #cc1b0b !important;
 }

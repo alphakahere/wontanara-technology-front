@@ -4,33 +4,52 @@ import "./Navbar.css";
 import LogoApp from "../../assets/images/logo.jpeg";
 import { FiLogIn } from "react-icons/fi";
 
+const Links = [
+	{
+		label: "Accueil",
+		path: "/",
+	},
+	{
+		label: "à propos",
+		path: "/a-propos",
+	},
+	{
+		label: "écoles",
+		path: "/nos-ecoles",
+	},
+	{
+		label: "événements",
+		path: "/nos-evenements",
+	},
+	{
+		label: "Formations",
+		path: "/formations",
+	},
+	{
+		label: "Contact",
+		path: "/contact",
+	},
+];
+
+const OppurtunityLinks = [
+	{
+		label: "Bourse d'études",
+		path: "/",
+	},
+	{
+		label: "Orientation",
+		path: "/",
+	},
+	{
+		label: "Hebergement",
+		path: "/",
+	},
+	{
+		label: "Aide Financière",
+		path: "/",
+	},
+];
 const Navbar = () => {
-	const Links = [
-		{
-			label: "Accueil",
-			path: "/",
-		},
-		{
-			label: "à propos",
-			path: "/a-propos",
-		},
-		{
-			label: "écoles",
-			path: "/nos-ecoles",
-		},
-		{
-			label: "événements",
-			path: "/nos-evenements",
-		},
-		{
-			label: "Formations",
-			path: "/formations",
-		},
-		{
-			label: "Contact",
-			path: "/contact",
-		},
-	];
 	return (
 		<nav className="navbar navbar-expand-lg bg-white py-3">
 			<div className="container-fluid ">
@@ -74,7 +93,7 @@ const Navbar = () => {
 						))}
 						<div className="dropdown">
 							<button
-								className="nav-link app-nav-link no-style-btn dropdown-toggle"
+								className="nav-link app-nav-dropdown-btn no-style-btn dropdown-toggle"
 								type="button"
 								data-bs-toggle="dropdown"
 								aria-expanded="false"
@@ -82,16 +101,16 @@ const Navbar = () => {
 								Oppurtinités
 							</button>
 							<ul className="dropdown-menu">
-								<li>
-									<NavLink className="dropdown-item" to="/">
-										Bourse d'études
-									</NavLink>
-								</li>
-								<li>
-									<NavLink className="dropdown-item" to="/">
-										Orientation
-									</NavLink>
-								</li>
+								{OppurtunityLinks?.map((item, index) => (
+									<li key={item.path + index}>
+										<NavLink
+											className="dropdown-item"
+											to={item.path}
+										>
+											{item.label}
+										</NavLink>
+									</li>
+								))}
 							</ul>
 						</div>
 					</ul>

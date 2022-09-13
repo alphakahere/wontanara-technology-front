@@ -6,23 +6,14 @@ function AppBanner() {
 		<section className="wontanara-banner d-flex align-items-center justify-content-center position-relative">
 			<div className="d-flex flex-column align-items-center gap-5 banner-text">
 				<div className="banner-title d-flex flex-column  flex-md-row gap-2">
-					<h4
-						className="px-2 py-1"
-						style={{ borderRadius: "10px", backgroundColor: "red" }}
-					>
+					<h4 className="px-2 py-1" style={{ color: "#cc1b0b" }}>
 						Amicale des Elèves,
 					</h4>{" "}
-					<h4
-						style={{ backgroundColor: "#ffc107", borderRadius: "10px" }}
-						className="px-2 py-1"
-					>
+					<h4 style={{ color: "#ffc107" }} className="px-2 py-1">
 						{" "}
 						Etudiants et Stagiaires
 					</h4>{" "}
-					<h4
-						style={{ backgroundColor: "#28a745", borderRadius: "10px" }}
-						className="px-2 py-1"
-					>
+					<h4 style={{ color: "#28a745" }} className="px-2 py-1">
 						Guinéens au Sénégal
 					</h4>
 				</div>
