@@ -1,6 +1,3 @@
-.events-details .gallery-container .image-gallery-slide {
-	/* max-height: calc(100vh - 300px); */
-}
 .events-details .gallery-container .image-gallery-right-nav:hover .image-gallery-svg,
 .events-details .gallery-container .image-gallery-right-nav:focus .image-gallery-svg,
 .events-details .gallery-container .image-gallery-left-nav:hover .image-gallery-svg,
@@ -8,3 +5,24 @@
 .events-details .gallery-container .image-gallery-fullscreen-button:hover .image-gallery-svg  {
 	color: #cc1b0b;
 }
+.event-card {
+	background: #ffffff;
+	box-shadow: 0px 5.32308px 14.5231px rgba(0, 0, 0, 0.133714);
+	border-radius: 5.32308px;
+	border: none;
+	margin: 3%;
+	transition: all ease-out 300ms;
+}
+
+.event-card:hover {
+	box-shadow: 0px 5.32308px 20.5231px rgba(0, 0, 0, 0.133714);
+	transform: scale(1.02);
+}
+
+.event-card-img {
+	height: 18vh;
+	border-radius: 10px 10px 0 0;
+	object-fit: cover;
+	object-position: center;
+}
+

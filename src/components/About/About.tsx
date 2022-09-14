@@ -1,6 +1,7 @@
 import React from "react";
 
 import aboutVideo from "../../assets/videos/about.mp4";
+import { useWindowDimensions } from "../Home/HomeSection/Teams";
 
 const About = () => {
 	return (
@@ -87,10 +88,22 @@ const About = () => {
 	);
 };
 export function AboutSection() {
+	const { width } = useWindowDimensions();
 	return (
-		<div className="row d-flex align-items-center">
-			<div className="col-lg-6">
-				<div className="about-text pe-4">
+		<div className="row d-flex align-items-center flex-lg-row-reverse">
+			<div className="col-lg-6 mb-2 ps-xxl-4">
+				<iframe
+					id="AEESGS"
+					title="AEESGS"
+					width="100%"
+					height={width > 767 ? "500px" : "300px"}
+					src={aboutVideo}
+					loading="lazy"
+					allow="autoplay; encrypted-media"
+				/>
+			</div>
+			<div className="col-lg-6 pe-xxl-4">
+				<div className="about-text">
 					<p className="mb-2">
 						L’amicale des Élèves, Étudiants et Stagiaires Guinéens au
 						Sénégal (AEESGS) est une association apolitique à but non
@@ -117,25 +130,6 @@ export function AboutSection() {
 						tutelle de l’AEESGS.
 					</p>
 				</div>
-			</div>
-			<div className="col-lg-6 ps-4">
-				{/* <img
-					src="https://picsum.photos/200"
-					alt=""
-					className=""
-					width="100%"
-					height="500px"
-					style={{ borderRadius: "10px" }}
-				/> */}
-				<iframe
-					id="AEESGS"
-					title="AEESGS"
-					width="100%"
-					height="500px"
-					src={aboutVideo}
-					loading="lazy"
-					allow="autoplay; encrypted-media"
-				/>
 			</div>
 		</div>
 	);

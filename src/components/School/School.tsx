@@ -1,6 +1,7 @@
 import React from "react";
 import { schools } from "../../utils/Constant";
 import SchoolCard from "./SchoolCard";
+import "./School.css";
 
 const School = () => {
 	return (

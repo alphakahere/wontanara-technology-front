@@ -59,13 +59,11 @@ const Footer = () => {
 					</ul>
 				</div>
 			</div>
-			<div className="wontanara-sign">
-				<p className="text-center py-3">
-					© {year} Tous droits réservés.
-					<Link translate="no" to="/">
-						Wontanara technology
-					</Link>
-				</p>
+			<div className="wontanara-sign d-flex align-items-center flex-column flex-sm-row justify-content-center gap-1 py-3">
+				<p>© {year} Tous droits réservés.</p>
+				<Link translate="no" to="/">
+					Wontanara technology
+				</Link>
 			</div>
 		</footer>
 	);

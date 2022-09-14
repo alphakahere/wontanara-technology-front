@@ -25,7 +25,7 @@ interface Partner {
 
 const PartenerCard: React.FC<Partner> = ({ logo, title }) => {
 	return (
-		<div className="col-md-4">
+		<div className="col-md-4 mb-4 mb-md-0">
 			<div
 				className="partner-card shadow py-4 flex-mc bg-white"
 				style={PartnerCardStyle}

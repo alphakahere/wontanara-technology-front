@@ -1,0 +1,19 @@
+.card-shcool-img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.card-school {
+	background: #ffffff;
+	box-shadow: 0px 5.32308px 14.5231px rgba(0, 0, 0, 0.14);
+	transition: all ease-out 300ms;
+    border-radius: 5px !important;
+}
+.card-school:hover {
+	transform: scale(1.02);
+    color: #000000;
+}
+.school-name {
+	font-size: clamp(12px, 1vw, 14px);
+}
