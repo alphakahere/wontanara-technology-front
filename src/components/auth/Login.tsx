@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../../common/Button";
 import { Input } from "../../common/Input";
 
@@ -22,17 +21,6 @@ const Login = () => {
 						</div>
 						<div className="btn-container">
 							<Button label="Se connecter" width="w-100" />
-						</div>
-						<div className="mt-4">
-							<Link to="/forget-password" className="app_link">
-								Mot de passe oublié?
-							</Link>
-						</div>
-						<div className="flex-sb">
-							<p>Pas encore de compte?</p>
-							<Link to="/forget-password" className="app_link">
-								S'inscrire
-							</Link>
 						</div>
 					</form>
 				</div>

@@ -11,7 +11,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputPropsType>((props, 
 					{label}
 				</label>
 				<input
-					className="form-control form-custom-control"
+					className="form-control form-control-lg form-custom-control"
 					placeholder={label}
 					id={id}
 					{...rest}

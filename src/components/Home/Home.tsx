@@ -63,9 +63,9 @@ const Home = () => {
 							dotListClass="custom-dot-list-style"
 							itemClass="carousel-item-padding-40-px"
 						>
-							{events?.map((event, i) => (
+							{/* {events?.map((event, i) => (
 								<EventCard key={i} event={event} />
-							))}
+							))} */}
 						</Carousel>
 					</div>
 				</section>

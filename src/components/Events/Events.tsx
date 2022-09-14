@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { events } from "../../utils/Constant";
 import EventCard from "./EventCard";
 import "./Event.css";
+import { events } from "./EventData";
 
 const filters = [
 	{
