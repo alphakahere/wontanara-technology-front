@@ -3,13 +3,14 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Home.css";
 import AppBanner from "./HomeSection/Banner";
-import { events, schools } from "../../utils/Constant";
+import { schools } from "../../utils/Constant";
 import SchoolCard from "../School/SchoolCard";
 import EventCard from "../Events/EventCard";
 import { AboutSection } from "../About/About";
 import Teams from "./HomeSection/Teams";
 import Partenaires from "./HomeSection/Partenaires";
 import { ContactComponent } from "../Contact/Contact";
+import { events } from "../Events/EventData";
 const responsive = {
 	superLargeDesktop: {
 		breakpoint: { max: 4000, min: 3000 },
@@ -63,9 +64,9 @@ const Home = () => {
 							dotListClass="custom-dot-list-style"
 							itemClass="carousel-item-padding-40-px"
 						>
-							{/* {events?.map((event, i) => (
+							{events?.map((event, i) => (
 								<EventCard key={i} event={event} />
-							))} */}
+							))}
 						</Carousel>
 					</div>
 				</section>

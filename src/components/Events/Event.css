@@ -5,6 +5,9 @@
 .events-details .gallery-container .image-gallery-fullscreen-button:hover .image-gallery-svg  {
 	color: #cc1b0b;
 }
+.events-details .image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: calc(70vh - 80px);
+}
 .event-card {
 	background: #ffffff;
 	box-shadow: 0px 5.32308px 14.5231px rgba(0, 0, 0, 0.133714);
@@ -24,5 +27,8 @@
 	border-radius: 10px 10px 0 0;
 	object-fit: cover;
 	object-position: center;
+}
+.detail-text p{
+	margin-bottom: 10px !important;
 }
 

@@ -92,7 +92,6 @@
 	color: #cc1b0b;
 }
 .card-custom-title {
-	white-space: nowrap;
 	font-size: clamp(14px, 2vw, 20px);
 }
 .member-card-name {

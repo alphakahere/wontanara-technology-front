@@ -14,9 +14,15 @@ const EventCard = ({ event }: { event: IEvent }) => {
 				/>
 			</div>
 			<div className="p-3">
-				<div className="d-flex justify-content-between align-items-center mb-3">
-					<div>
-						<h5 className="card-title card-custom-title">{event?.title}</h5>
+				<div className="d-flex justify-content-between align-items-start mb-3">
+					<div className="flex-fill">
+						<h5
+							className="card-title card-custom-title"
+							style={{ maxHeight: 50, height: 50 }}
+						>
+							{event?.title.slice(0, 40)}
+							{event?.title.length > 40 && "..."}
+						</h5>
 						<small>{event.date}</small>
 					</div>
 					<h6 className="card-name badge text-bg-dark fs-13">

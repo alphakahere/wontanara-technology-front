@@ -3,25 +3,6 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { useLocation } from "react-router-dom";
 
-// const images = [
-// 	{
-// 		original: "https://picsum.photos/id/1000/2000/700/",
-// 		thumbnail: "https://picsum.photos/id/1000/250/150/",
-// 	},
-// 	{
-// 		original: "https://picsum.photos/id/1020/2000/700/",
-// 		thumbnail: "https://picsum.photos/id/1020/250/150/",
-// 	},
-// 	{
-// 		original: "https://picsum.photos/id/1019/2000/700/",
-// 		thumbnail: "https://picsum.photos/id/1019/250/150/",
-// 	},
-// 	{
-// 		original: "https://picsum.photos/id/1014/2000/700/",
-// 		thumbnail: "https://picsum.photos/id/1014/250/150/",
-// 	},
-// ];
-
 const EventDetail = () => {
 	const event = useLocation()?.state as any;
 	const photos = [
@@ -32,6 +13,14 @@ const EventDetail = () => {
 		{
 			original: event?.images[1],
 			thumbnail: event?.images[1],
+		},
+		{
+			original: event?.images[2],
+			thumbnail: event?.images[2],
+		},
+		{
+			original: event?.images[3],
+			thumbnail: event?.images[3],
 		},
 	];
 	return (
@@ -44,33 +33,10 @@ const EventDetail = () => {
 					<h2 className="detail-title">{event?.title}</h2>
 					<h6 className="card-name badge text-bg-dark">{event?.author}</h6>
 				</div>
-				<div className="detail-text">
-					<p>{event?.description}</p>
-					{/* <p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-						beatae minima ipsam sit voluptas nam illo consequuntur impedit
-						officia omnis distinctio dolores, autem, iste odio facere ad
-						voluptates consequatur aspernatur?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-						beatae minima ipsam sit voluptas nam illo consequuntur impedit
-						officia omnis distinctio dolores, autem, iste odio facere ad
-						voluptates consequatur aspernatur?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-						beatae minima ipsam sit voluptas nam illo consequuntur impedit
-						officia omnis distinctio dolores, autem, iste odio facere ad
-						voluptates consequatur aspernatur?
-					</p>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-						beatae minima ipsam sit voluptas nam illo consequuntur impedit
-						officia omnis distinctio dolores, autem, iste odio facere ad
-						voluptates consequatur aspernatur?
-					</p> */}
-				</div>
+				<div
+					className="detail-text"
+					dangerouslySetInnerHTML={{ __html: event?.description }}
+				/>
 			</div>
 		</div>
 	);

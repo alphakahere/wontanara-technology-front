@@ -99,7 +99,7 @@ export function AboutSection() {
 					height={width > 767 ? "500px" : "300px"}
 					src={aboutVideo}
 					loading="lazy"
-					allow="autoplay; encrypted-media"
+					// allow="autoplay; encrypted-media"
 				/>
 			</div>
 			<div className="col-lg-6 pe-xxl-4">
