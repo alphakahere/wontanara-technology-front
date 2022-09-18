@@ -11,6 +11,12 @@ import d2 from "../../assets/images/debat/d2.jpeg";
 import d3 from "../../assets/images/debat/d3.jpeg";
 import d4 from "../../assets/images/debat/d4.jpeg";
 
+import tv1 from "../../assets/images/tv/tv1.jpeg";
+import tv2 from "../../assets/images/tv/tv2.jpeg";
+import tv3 from "../../assets/images/tv/tv3.jpeg";
+import tv4 from "../../assets/images/tv/tv4.jpeg";
+import tv5 from "../../assets/images/tv/tv5.jpeg";
+
 export interface IEvent {
 	title: string;
 	date: string;
@@ -33,7 +39,7 @@ export const events: IEvent[] = [
 		author: "AEESGS",
 		description:
 			"<p>l’activité a eu lieu DIMANCHE 27 MARS 2022. Itinéraire : marché fass – Monument de la Renaissance (ouakam) – marché fass.</p><p> Au total 44 personnes ont participé à l’activité.</p>",
-		images: [jc1, jc2],
+		images: [tv1, tv2, tv3, tv4, tv5],
 	},
 	{
 		title: "Débattons",

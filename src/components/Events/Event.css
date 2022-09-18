@@ -6,7 +6,7 @@
 	color: #cc1b0b;
 }
 .events-details .image-gallery-content .image-gallery-slide .image-gallery-image {
-    max-height: calc(70vh - 80px);
+    max-height: 500px;
 }
 .event-card {
 	background: #ffffff;

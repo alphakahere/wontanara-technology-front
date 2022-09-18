@@ -22,6 +22,10 @@ const EventDetail = () => {
 			original: event?.images[3],
 			thumbnail: event?.images[3],
 		},
+		{
+			original: event?.images[4],
+			thumbnail: event?.images[4],
+		},
 	];
 	return (
 		<div className="py-4 events-details">
