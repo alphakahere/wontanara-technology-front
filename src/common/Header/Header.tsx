@@ -12,13 +12,11 @@ const Header = () => {
 			<div className="top-header d-sm-flex align-items-center gap-5">
 				<div className="d-flex align-items-center gap-2">
 					<FiPhoneCall style={iconStyle} />
-					<a href={`tel: ${"00221775280693"}`}>00221775280693</a>
+					<a href={`tel: ${"00221784947772"}`}>00221784947772</a>
 				</div>
 				<div className="d-flex align-items-center gap-2">
 					<FiMail style={iconStyle} />
-					<a href="mailto:contact@wontanaratech.com">
-						contact@wontanaratech.com
-					</a>
+					<a href="mailto:aeesgs2019@gmail.com">aeesgs2019@gmail.com</a>
 				</div>
 			</div>
 			<Navbar />

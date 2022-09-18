@@ -24,13 +24,15 @@ const Footer = () => {
 					<ul>
 						<li className="list-title mt-3 mt-md-0">Nous suivre</li>
 						<li>
-							<a href="/">Facebook</a>
+							<a href="https://web.facebook.com/guineensdusenegal/">
+								Facebook
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/ESenega">Twitter</a>
 						</li>
 						<li>
 							<a href="/">Instagram</a>
-						</li>
-						<li>
-							<a href="/">Twitter</a>
 						</li>
 						<li>
 							<a href="/">Linkedin</a>

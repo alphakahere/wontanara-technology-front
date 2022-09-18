@@ -48,18 +48,24 @@ export const ContactComponent = () => {
 					</div>
 					<ul className="flex-sb p-0 mt-5">
 						<li className="social-media-container">
-							<a href="/" className="social-media-link">
+							<a
+								href="https://web.facebook.com/guineensdusenegal/"
+								className="social-media-link"
+							>
 								<FaFacebookF />
+							</a>
+						</li>
+						<li className="social-media-container">
+							<a
+								href="https://twitter.com/ESenega"
+								className="social-media-link"
+							>
+								<AiOutlineTwitter />
 							</a>
 						</li>
 						<li className="social-media-container">
 							<a href="/" className="social-media-link">
 								<AiFillInstagram />
-							</a>
-						</li>
-						<li className="social-media-container">
-							<a href="/" className="social-media-link">
-								<AiOutlineTwitter />
 							</a>
 						</li>
 						<li className="social-media-container">
